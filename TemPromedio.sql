@@ -1,3 +1,5 @@
-SELECT  indice_tiempo,temperatura_promedio/2
+SELECT indice_tiempo,temperatura_promedio
 FROM 
-"demanda-de-electricidad-datos-anuales"
+"demandaelectricaarg"
+WHERE temperatura_promedio>18.48
+ORDER BY temperatura_promedio DESC
